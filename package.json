@@ -1,0 +1,24 @@
+{
+  "name": "synthia",
+  "version": "1.0.0",
+  "description": "Synthesizer-like applications and toys in JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaosotter/synthia.git"
+  },
+  "author": "chaosotter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chaosotter/synthia/issues"
+  },
+  "homepage": "https://github.com/chaosotter/synthia#readme",
+  "dependencies": {
+    "@tarp/require": "^1.4.3",
+    "google-closure-library": "^20210601.0.0",
+    "readline-sync": "^1.4.10"
+  }
+}
