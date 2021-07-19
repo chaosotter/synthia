@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="../../node_modules/@tarp/require/require.js"></script>
+  <script src="../../node_modules/google-closure-library/closure/goog/base.js"></script>
+  <script>
+    Tarp.require({expose: true});
+    let driver = require('./driver.js');
+    function start() {
+      driver.start();
+      let T$ = require('./terminal.js');
+      T$.hello('NAME', 'ORIGINAL', 'VERSION');
+    }
+  </script>
+  <title>JS Terminal Testing</title>
+</head>
+
+<body onload="start();">
+  <p>
+    Hello, world.
+  </p>
+  <div id="application">
+    <canvas id="terminal" width="1024" height="768"></canvas>
+  </div>
+</body>
+
+</html>
